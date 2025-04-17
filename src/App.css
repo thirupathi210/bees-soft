@@ -1,0 +1,273 @@
+.header-wrapper {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1050; /* high enough to sit above content */
+  background: linear-gradient(to right, #c2f0ff, #a5fdd3);
+}
+
+.logo-clod {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
+.get-started-btn {
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  min-width: 140px;
+}
+body {
+  padding-top: 75px; /* adjust based on header height */
+}
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background: white;
+    border-radius: 0.5rem;
+    padding: 1rem;
+  }
+}
+
+
+/* users */
+.stat-card {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  text-align: center;
+  height: 100%;
+}
+.stat-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #003366;
+}
+.overlay-section {
+  background-image: url('/public/images/clints.webp'); /* use your actual path */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: flex-end; /* align text to bottom */
+  justify-content: flex-start; /* align text to left */
+  padding: 2rem;
+  border-radius: 1rem;
+  height: 100%; /* ensure full height inside column */
+  min-height: 500px; /* adjust depending on design */
+  overflow: hidden;
+}
+
+.overlay-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 76, 153, 0.7), rgba(0, 76, 153, 0));
+  z-index: 1;
+  border-radius: 1rem;
+}
+
+.overlay-text {
+  position: relative;
+  z-index: 2;
+}
+/* erp */
+.position-relative img {
+  z-index: 1;
+}
+
+.custom-icon {
+  position: absolute;
+  z-index: 2;
+}
+
+.cloud-icon {
+  top: 10%;
+  left: 20%;
+  width: 100px;
+}
+
+.left-arrow {
+  bottom: 10%;
+  left: 15%;
+  width: 50px;
+}
+
+.right-arrow {
+  bottom: 10%;
+  right: 15%;
+  width: 50px;
+}
+.bg-ecp{
+  
+  background-color: #02053b; 
+  
+}
+.bg-ecp h2{
+color: #fff;
+ 
+}
+.countdown-section {
+  background-color: #f8f9fa;
+  padding: 2rem 0;
+}
+
+.countdown-section .text-primary {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.brand-icon {
+  max-height: 80px; /* previously might be 60px */
+  width: auto;
+  max-width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.brand-icon:hover {
+  transform: scale(1.2);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* contact us */
+.connect-section {
+  background-image: url('https://html.xpressbuddy.com/techco/assets/images/backgrounds/bg_image_5.webp'); /* Corrected the path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center 79.5521px;
+}
+.form-container {
+  background-color: #0057ff;
+  color: #fff;
+  padding: 40px;
+  border-radius: 20px;
+}
+.form-control,
+.form-control:focus {
+  border-radius: 10px;
+  border: none;
+  padding: 14px;
+}
+.form-label {
+  font-weight: bold;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+.input-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: gray;
+}
+.form-control::placeholder {
+  padding-left: 25px;
+}
+/* latext news */
+.blog-card {
+  border-radius: 20px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+.blog-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+.tag {
+  background-color: #f0f4ff;
+  color: #2c3e50;
+  font-size: 14px;
+  padding: 4px 10px;
+  border-radius: 8px;
+  margin-right: 6px;
+}
+.blog-meta {
+  font-size: 14px;
+  color: #2c3e50;
+}
+.blog-title {
+  font-weight: 700;
+  color: #001c55;
+  font-size: 18px;
+}
+.read-more {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+}
+.read-more:hover {
+  text-decoration: underline;
+}
+/* latextnews */
+.latext-news{
+  background: linear-gradient(to right, #d2f5d1, #b5e7f0);
+  padding: 50px 0;
+}
+/* footer */
+
+
+.footer {
+  padding: 60px 20px;
+  background-color: #02053b;
+  color: #fff;
+}
+
+.footer-icon {
+  width: 60px;
+  height: 60px;
+  background-color: #1c1f54;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  margin-right: 15px;
+}
+
+.footer .title {
+  font-weight: 700;
+  color: #fff;
+}
+
+.footer .subtitle {
+  font-weight: 500;
+  color: #aaa;
+}
+
+.footer .footer-link {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.footer .footer-link:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  margin-top: 40px;
+  padding-top: 40px;
+}
+.app-colud{
+  background: linear-gradient(to right, #d2f5d1, #b5e7f0);
+  
+}
